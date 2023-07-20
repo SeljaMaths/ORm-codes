@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Update Here</h1>
+<form action="" method="post">
+    {% csrf_token %}
+<label>Name</label>
+<input  type="text" name="name1" value="{{obj.name}}"><br><br>
+<label>Email</label>
+<input  type="email" name="email1" value="{{obj.email}}"><br><br>
+<label>Age</label>
+<input  type="text" name="age1" value="{{obj.age}}"><br><br>
+<label>password</label>
+<input  type="password" name="password1" value="{{obj.password}}"><br><br>
+<input type="submit" value="update">
+ </form>
+</body>
+</html>

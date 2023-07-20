@@ -1,0 +1,21 @@
+<!-- myapp/templates/add_author.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Author</title>
+</head>
+<body>
+    <h1>Add Author</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
+        <br>
+        <button type="submit">Add Author</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<table>
+  <style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  </style>
+    <thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Age</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+      {% for i in  x %}
+    <td >{{i.name}} </td>
+    <td>{{i.email}}</td>
+    <td>{{i.age}}</td>
+
+    <td><a href="/update_register/{{i.id}}/">Update</a></td>
+    <td><a href="/delete_register/{{i.id}}/">Delete</a></td>
+  </tr>
+  </tbody>
+    {% endfor %}
+
+</table>

@@ -61,12 +61,12 @@ def last_data(request):
 
 
 def age_calculation(request):
-    age = register.objects.filter(age__gte=18)
+    age = register.objects.filter(age__gte=19)
     return render(request, 'greater.html',{'age':age})
 
 
 def age_calculate_18(request):
-    age = register.objects.filter(age__lte=18)
+    age = register.objects.filter(age__lte=19)
     return render(request, 'less.html',{'age':age})
 
 
